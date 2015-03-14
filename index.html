@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+
+<head>
+  <meta charset="utf-8">
+  <!-- <script src="http://code.angularjs.org/1.2.13/angular.js"></script> -->
+  <!-- <script src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.8/angular-ui-router.min.js"></script> -->
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0/angular.min.js"></script> -->
+  <!-- drop down button link before my CSS -->
+  <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
+
+
+  <!-- load bootstrap (bootswatch version) -->
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootswatch/3.1.1/readable/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+  <!--<script src="view1.js"></script>
+  <script src="view2.js"></script>-->
+
+</head>
+
+<body>
+
+  <header>
+    <nav class="navbar navbar-default">
+      <div class="container">
+        <div class="navbar-header">
+           <a href="http://www.sherriberryapps.com" target="_blank">
+        <img src="http://img.photobucket.com/albums/v435/ocinrime/tiger%20app.png" border="0" alt="photo tiger app.png" />
+      </a>
+          
+        </div>
+
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#main"><i class="main"></i>Home</a>
+          </li>
+          <li><a href="#about"><i class="about"></i>About</a>
+          </li>
+          <li><a href="#budgetForm"><i class="budget"></i>Budget</a>
+          </li>
+          <li><a href="#tracking"><i class="tracking"></i>Tracking</a>
+          </li>
+          <li><a href="#contact"><i class="contact"></i> Contact</a>
+          </li>
+          <!-- when tracking is selected, it pops up tracking view-->
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <div ng-view>
+
+    <!-- This is where my partial templates will be presented -->
+
+
+  </div>
+
+      <!-- footer -->
+     
+
+      <!-- ALL THE STUFF THAT MAKES IT ROLL! -->
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+      <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular.js"></script>
+      <!--<script src="//angular-ui.github.io/bootstrap/ui-bootstrap-tpls-0.12.0.js"></script>-->
+      <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.13/angular-route.js"></script>
+      <!--<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.13/angular-animate.js"></script> -->
+      <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/0.10.0/ui-bootstrap-tpls.min.js"></script>
+
+      <script src='https://cdn.firebase.com/js/client/2.0.4/firebase.js'></script>
+      <script src="https://cdn.firebase.com/libs/angularfire/0.9.2/angularfire.min.js"></script>
+      <script src="script.js"></script>
+
+      <!-- bootstrap -->
+      <script src="//angular-ui.github.io/bootstrap/ui-bootstrap-tpls-0.12.0.js"></script>
+      <!-- Latest compiled and minified CSS -->
+
+</body>
+
+</html>
